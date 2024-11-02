@@ -1,13 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ['localhost'],
-  },
-  experimental: {
-    serverActions: true,
-  },
+  reactStrictMode: true,
+  transpilePackages: ['recharts', 'react-smooth'],
   webpack: (config) => {
-    config.externals = [...config.externals, 'canvas', 'jsdom'];
+    config.resolve.fallback = { ...config.resolve.fallback, canvas: false };
     return config;
   },
 }

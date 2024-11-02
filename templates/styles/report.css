@@ -1,0 +1,139 @@
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header styles */
+header {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+/* Chart styles */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.chart-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Comparison styles */
+.comparison-container {
+  position: relative;
+  margin: 2rem 0;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comparison-slider {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Analysis styles */
+.analysis-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.metrics-table th,
+.metrics-table td {
+  padding: 0.75rem;
+  border: 1px solid #e1e4e8;
+  text-align: left;
+}
+
+.metrics-table th {
+  background: #f6f8fa;
+}
+
+/* Issue list styles */
+.issues-list {
+  list-style: none;
+  padding: 0;
+}
+
+.issue {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border-left: 4px solid;
+}
+
+.issue.high {
+  background: #fff5f5;
+  border-left-color: #ff0000;
+}
+
+.issue.medium {
+  background: #fff8f0;
+  border-left-color: #ff6900;
+}
+
+.issue.low {
+  background: #fff9e6;
+  border-left-color: #ffa500;
+}
+
+/* Score styles */
+.score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.score.good { color: #4CAF50; }
+.score.warning { color: #FFA500; }
+.score.poor { color: #F44336; }
+
+/* Filter controls */
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.severity-filter {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.severity-filter[data-severity="high"] { background: #fff5f5; }
+.severity-filter[data-severity="medium"] { background: #fff8f0; }
+.severity-filter[data-severity="low"] { background: #fff9e6; }
+.severity-filter[data-severity="all"] { background: #e1e4e8; } 
