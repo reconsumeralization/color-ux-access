@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -46,3 +47,7 @@ out
 build
 *.mp4
 *.log
+=======
+*.png
+venv
+>>>>>>> 084d0d7f2c93c6274f6a93a881e60fabc385651a
